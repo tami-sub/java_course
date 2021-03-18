@@ -1,0 +1,7 @@
+<application>
+  <component name="GithubAccounts">
+    <account id="753ffc57-e804-45c2-af27-20bab71bdb50" name="tami-sub">
+      <server host="github.com" />
+    </account>
+  </component>
+</application>
