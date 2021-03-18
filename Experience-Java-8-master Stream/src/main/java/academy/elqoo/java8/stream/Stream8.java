@@ -22,7 +22,7 @@ public class Stream8 {
     }
 
     public static List<User> getLimitedUserList(List<User> users, int limit){
-        return users.stream().limit(2).collect(Collectors.toList());
+        return users.stream().limit(limit).collect(Collectors.toList());
     }
 
     public static Integer countUsersOlderThen25(List<User> users){
