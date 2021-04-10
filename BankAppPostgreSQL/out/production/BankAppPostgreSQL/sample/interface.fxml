@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" prefHeight="400.0" prefWidth="500.0" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerInterface">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <TextField fx:id="firstField" alignment="CENTER" promptText="Surname" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <TextField fx:id="name" alignment="CENTER" layoutX="154.0" layoutY="184.0" promptText="Name" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <TextField fx:id="thirdField" alignment="CENTER" layoutX="154.0" layoutY="161.0" promptText="Middle name" GridPane.columnIndex="1" GridPane.rowIndex="4">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets></TextField>
+      <Button fx:id="btnCreate" mnemonicParsing="false" onAction="#createAccount" prefWidth="200.0" text="Send" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+      <Button fx:id="btnWithdrawal" mnemonicParsing="false" onAction="#addWithdrawal" prefHeight="26.0" prefWidth="82.0" text="Withdrawal" textAlignment="CENTER" visible="false" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+      <Button fx:id="btnAddBalance" mnemonicParsing="false" onAction="#addBalance" text="Add Balance" textAlignment="CENTER" visible="false" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+      <Button fx:id="btnTransfer" mnemonicParsing="false" onAction="#addTransfer" prefHeight="26.0" prefWidth="82.0" text="Transfer" textAlignment="CENTER" visible="false" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+      <Button fx:id="btnAccounts" mnemonicParsing="false" onAction="#showAccounts" prefHeight="26.0" prefWidth="82.0" text="Accounts" textAlignment="CENTER" visible="false" GridPane.rowIndex="3" />
+      <TextField fx:id="accountNumber" alignment="CENTER" layoutX="172.0" layoutY="189.0" maxWidth="70.0" minWidth="73.0" prefHeight="0.0" prefWidth="70.0" promptText="Account №" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <TextField fx:id="amountTransfer" alignment="CENTER" layoutX="172.0" layoutY="189.0" maxWidth="70.0" minWidth="73.0" prefHeight="0.0" prefWidth="70.0" promptText="Amount" visible="false" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="3" />
+      <Button fx:id="btnShowBalance" contentDisplay="CENTER" disable="true" mnemonicParsing="false" prefHeight="26.0" prefWidth="82.0" text="Balance" textAlignment="CENTER" visible="false" GridPane.rowIndex="2" />
+      <Button fx:id="btnShowHistory" contentDisplay="CENTER" layoutX="87.0" layoutY="152.0" mnemonicParsing="false" onAction="#showHistory" prefHeight="26.0" prefWidth="82.0" text="History" textAlignment="CENTER" visible="false" GridPane.rowIndex="4" />
+      <TextArea fx:id="allAccounts" editable="false" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" />
+   </children>
+</GridPane>
